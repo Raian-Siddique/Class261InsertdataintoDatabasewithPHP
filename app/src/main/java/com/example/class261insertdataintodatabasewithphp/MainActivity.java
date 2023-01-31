@@ -64,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
  //*********************   JSON Array Request finished ********************************
 
 
-
-
 // ===================Button insert starts =========================================
 
 
@@ -106,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
-
 
 
 //                if(name.length()>0 && mobile.length()>0 && email.length()>0){
@@ -214,9 +211,6 @@ public class MainActivity extends AppCompatActivity {
             //********************* button update finished *****************************************
 
 
-
-
-
             //============================= Button DELETE ========================
 
 
@@ -269,7 +263,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadData(){
 
-        arrayList = new ArrayList<>();  // aikhane new arrayList call na korle abr aki data duibar load hoye  jabe, tai notun array list nisi
+        // aikhane new arrayList call na korle abr aki data duibar load hoye  jabe
+        arrayList = new ArrayList<>();
 
         RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
         String url = "https://testbdraian.000webhostapp.com/apps/view.php";
@@ -319,6 +314,7 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
 
             }
         }
